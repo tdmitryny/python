@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  pythontestttt:
+    image: pythontestttt
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5002:5002
