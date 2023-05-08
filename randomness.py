@@ -1,16 +1,18 @@
 import random
 
 
-#dice = input("Heads or Tails?")
+row1 = ["🧊","🧊","🧊"]
+row2 = ["🧊","🧊","🧊"]
+row3 = ["🧊","🧊","🧊"]
 
-name_string = input("Give me everybody's name seperated by a comma")
-names = name_string.split(", ")
+map = [row1,row2,row3]
+print(f"{row1},\n{row2}\n{row3}")
+position = input("Where is your postion?")
 
-items = len(names)
-
-person = random.randint(0,items -1)
-final_name = names[person]
+horizontal = int(position[0])
+vertical = int(position[1])
 
 
-print(f"{final_name} is going to buy meal today")
-#Vasya, Petya, Mosya, Kosya, Rvosya
+selected_row = map[vertical - 1]
+final = selected_row[horizontal -1] = "X"
+print(f"{row1},{row2},{row3}")
